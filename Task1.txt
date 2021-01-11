@@ -1,0 +1,68 @@
+1)Difference between HTTP 1.1 vs HTTP2?
+Digging up into history we know that the first version of HTTP was released in 1991 known as v0.9, 
+although this supported only get method, later on in 1996 HTTP/1.0 was released. 
+This was more efficient and secure due to additional methods, header fields, 
+and also tied up with a security protocol. Now some more standards were added to it and
+by June 1996 which were adopted by 65% of the browsers at that time and this was officially 
+released as HTTP/1.1 in 1997, so most of the browsers were using HTTP/1.1 even before its 
+official release. Later on, many updates and standards were added to HTTP/1.1 until 2014 
+finally, a new more efficient version HTTP/2.0
+
+
+
+2)Version History of the HTTP?
+The HTTP/1.1 standard as defined in RFC 2068 was officially released in January 1997. 
+Improvements and updates to the HTTP/1.1 standard were released under RFC 2616 in June 1999.
+year             HTTP Version
+1990             0.9
+1996             1.0
+1997             1.1
+2015             2.0         
+2020             3.0
+
+3)List 5 differenec between Browser Js and Node Js?
+  Browser JS                                                      Node JS
+  1)Browser.js is mainly used for                         1)Node.js javascript code gets executed outside  
+client-side applications like validations                   the browser as it is an interpreter as well as
+on a web page or dynamic page display and                   an environment for running javascript and used 
+as the name suggests it gets executed in                    for server-side applications
+the browser only.                                       
+ 2)In nutshell,Browser.js is                              2)In nutshell, Node.js is used for backend
+used for frontend 
+ 3) Browser.js is sandboxed for the safety                3)Node.js has full system access i.e can read 
+purposes and have access limited to the browser             and write directly to the file system like any
+                                                            other application that also concludes that 
+                                                            we can write complete software using Node.js 
+ 4)window” object cause it doesn’t have                   4)“global” object contains several functions 
+a window to draw anything.                                 that are not available in browsers as 
+“location” object is related to a particular               they are needed for server-side works only.
+URL that means it is for page-specific.                    “require” object which is used to include modules in the app.
+“document” object also, cause it never 
+have to render anything on a page      
+5)Browser.js runs any engine like Spider monkey            5)Node.js runs in a V8 engine which is mainly 
+(Firefox),JavaScript Core (Safari), V8 (Google Chrome)       used by google chrome. 
+accordingly browser     
+
+4)What happens when you type a URL in th address bar in the browser? 
+You enter a URL into a web browser. The browser looks up the IP address for the domain name via DNS(Domain Name Server).
+ The browser sends a HTTP request to the server. The server sends back a HTTP response.
+URL stands for Uniform Resource Locator. URL is the address of the website which you can find in the 
+address bar of your web browser. It is a reference to a resource on the internet, be it images, 
+hypertext pages, audio/video files, etc. 
+
+Steps for what happens when we enter a URL :
+
+Browser checks cache for DNS entry to find the corresponding IP address of website.
+It looks for following cache. If not found in one, then continues checking to the next until found.
+Browser Cache
+Operating Systems Cache
+Router Cache
+ISP Cache
+If not found in cache, ISP’s (Internet Service Provider) DNS server initiates a DNS query to find IP address of server that hosts the domain name.
+The requests are sent using small data packets that contain information content of request and IP address it is destined for.
+Browser initiates a TCP (Transfer Control Protocol) connection with the server using synchronize(SYN) and acknowledge(ACK) messages.
+Browser sends an HTTP request to the web server. GET or POST request.
+Server on the host computer handles that request and sends back a response. It assembles a response in some format like JSON, XML and HTML.
+Server sends out an HTTP response along with the status of response.
+Browser displays HTML content
+Finally, Done.     
