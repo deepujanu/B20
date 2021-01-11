@@ -1,0 +1,40 @@
+1)Load the rest countries data using your html and script.js file 
+and run a for loop on the data and print all the country name in the console.
+
+
+2)Write a write up on Difference between copy by value and copy by reference?
+
+  Copy by Value                                              Copy by Reference 
+
+1)Call by value method copies the value of                1)Call by reference method copies the 
+an argument into the formal parameter of that function.    address of an argument into the formal parameter.
+Therefore, changes made to the parameter of the main       In this method, the address is used to access the   
+function do not affect the argument.                       actual argument used in the function call.
+                                                           It means that changes made in the parameter alter
+                                                           the passing argument.
+2)In Call by value method original value is not modified  2)Call by reference method, the original value is modified.
+3)In Call by value, a copy of the variable is passed      3)Call by reference, a variable itself is passed.
+4)In Call by value, actual and formal arguments           4)Call by reference, actual and formal arguments 
+will be created in different memory locations.              will be created in the same memory location.
+5)Call by value is the default method in programming      5)Call by reference is supported only Java language.
+languages like C++, PHP, Visual Basic NET, and C#
+6)Call by Value, variables are passed using a             6)Call by Reference, pointers are required 
+straightforward method                                      to store the address of variables.
+
+
+3)How to copy by value a composite datatype (array+objects)?
+ A composite data type in JavaScript has multiple values, which are grouped together. Arrays and 
+Objects can be classified as a composite data type in JavaScript.
+Primitive Data types are passed in by value whereas non-primitive data types(composite data types) 
+are passed in by reference in practise, the value of a is copied to c as a value .
+We have also changed the value of c and it does not disturb the value of a since 
+c is set to a value of 10 and not reference/memory of a in case of primitive data type . 
+A separate memory is allocated to each variable.the value of a is initially stored in a memory ( i.e 0x01).
+When we assign the value of b to be equal to a .It goes to the memory location of 0x01 
+and copies the value as reference and stores it in b. If we change any value in b ,
+it also changes the array of b. 
+This happens because both are located in same memory location.
+One of the ways of copying the composite data type by value is achieved with the help of spread operator (…).
+the array2 has the elements of array1 copied into it. Any changes made to array1 will not be reflected in array2 and vice versa.
+In the same program, array3 which is copied as a reference had its value changed and the changes made in one array would reflect in the other array which in most cases is undesirable.
+Hence with the help of Spread operator(…) ,we can copy by value for composite data types.
